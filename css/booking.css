@@ -1,0 +1,143 @@
+body{
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../media/wingfoil.jpg);
+
+}
+
+main{
+  padding: 2rem 10rem;
+}
+
+h2{
+  font-family: sweety;
+  font-size: 3rem;
+  color: #253453;
+  text-align: center;
+}
+
+main section{
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+main > section{
+  background-color: #11192c;
+}
+
+main section section.deco{
+  min-width: 400px;
+  border-radius: 1rem 0 0 1rem;
+}
+
+main section section.form{
+  min-width: 600px;
+  border-radius: 0 1rem 1rem 0;
+}
+
+main section section.deco img{
+  width: 100%;
+}
+
+form{
+  font-family: menu;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+input{
+  margin-bottom: 1rem;
+  width: 48%;
+}
+label[for="nombre"], label[for="apellidos"]{
+  order: 1;
+  width: 48%;
+}
+input[name="nombre"], input[name="apellidos"]{
+  order: 2;
+}
+
+[name="email"],[for="email"]{
+  order: 3;
+}
+
+[name="email"]{
+  flex-grow: 1;
+  width: 90%;
+  margin-left: 1rem;
+}
+
+[name="pax"],[for="pax"]{
+  order: 4;
+}
+[for="pax"]{
+}
+
+form p{
+  width: 100%;
+  order: 5;
+  font-family: sweety;
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+
+form p:first-of-type{
+  order: 0;
+}
+
+input[type="radio"]{
+  width: 10%;
+  text-align: right;
+  
+  order: 5;
+}
+input[type="radio"] + label{
+  width: 90%;
+  
+  order: 5;
+}
+
+label[for="fecha-in"],[for="fecha-out"]{
+  
+  order: 6;
+  width: 48%;
+}
+
+[type="date"]{
+  order: 7;
+  width: 48%;
+}
+
+button{
+  width: 8rem;
+  padding: 0.5rem;
+  border: 1px solid black;
+  border-radius: 0.3rem;
+  margin-left: 1rem;
+  order: 8;
+  
+}
+
+button:first-of-type{
+  margin-left: auto;
+}
+
+button:last-of-type{
+  margin-right: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+

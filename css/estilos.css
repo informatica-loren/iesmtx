@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: menu;
+    src: url(fonts/CaviarDreams.ttf);
+}
+
+@font-face {
+    font-family: sweety;
+    src: url(fonts/Sweety.ttf);
+}
+
+/* distribución */
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+}
+body > main{
+    flex-grow: 1;
+}
+
+/* cabecera */
+header{
+    color: white;
+    background: rgb(52,52,52);
+    background: linear-gradient(180deg, rgba(52,52,52,1) 0%, rgba(255,255,255,0) 100%);
+    padding: 1.5rem;
+    transition: .8s;
+
+}
+
+header:hover{
+    background: rgb(52,52,52,0.4);
+    transition: .8s; 
+}
+
+header .login{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.25s ease-out;
+    
+}
+header:hover .login{
+    max-height: 800px;
+    transition: max-height 0.25s ease-in;
+}
+header a{
+    text-decoration: none;
+    font-family: arial;
+    color: #ffffffcb;
+    font-family: menu;;
+}
+
+header i{
+    width: 1.4rem;
+}
+
+/* menú login */
+header .login > nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 2.2rem;
+}
+.fa-magnifying-glass{
+    color: #ebe87f;
+}
+.fa-hand-spock{
+    color: #f37e6d;
+}
+.fa-cart-shopping{
+    color: #04a0e8;
+}
+/* menu */
+header section.menu{
+    display: flex;
+    /*! margin-top: 1rem; 
+    background-color: #00000099;*/
+    padding: 0.1rem 2rem;
+    align-items:  center;
+ 
+    justify-content: space-between;
+}
+.menu img{
+    width: 6rem;
+}
+.menu ul a{
+    
+}
+
+.menu a:hover{
+    background-color:  #ebe87f;
+    padding-top: 0.1rem;
+    color: black;
+    
+}
+header section.menu > div{
+    /*! margin-left: auto; */
+}
+
+header section.menu ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+header ul a{
+    display: block;
+    padding: 0rem 0.6rem
+}
+
+/* main */
+main{
+    overflow: hidden;
+}
+div.video{
+    position: absolute;
+    width: 100%;
+}
+div.video video{
+    height: 100vh;
+    /*! width: 100%; */
+    overflow: hidden;
+}
+
+div.contenido{
+    position: absolute; height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+main{
+    flex-grow: 1;
+}
+main h1{
+    color: white;
+    font-family: sweety;
+    text-align: center;
+    font-size: 8rem;
+    color: #FFFFFF;
+    margin-top: 30vh;
+    margin-bottom: 5rem;
+}
+main div{
+    text-align: center;
+}
+main div a{
+    color: white;
+    font-family: menu;
+    font-size: 1.5rem;
+    border-radius: 150px;
+    border: white solid 3px;
+    padding: 2rem;
+    margin-left: auto;
+    transition: .8s;
+}
+main div a:hover{
+    
+    background-color: #00000099;
+    transition: .8s;
+}
+/* bandas */
+footer{
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
